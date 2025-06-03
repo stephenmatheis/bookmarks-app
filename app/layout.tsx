@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import { ThemeProvider } from 'next-themes';
 import type { Metadata } from 'next';
+import '@/styles/app.scss';
 
 const defaultUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000';
 
