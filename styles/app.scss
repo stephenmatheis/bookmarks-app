@@ -1,7 +1,7 @@
 :root {
     --primary: #000000;
-    --muted: #a3a3a3;
-    --color: #767676;
+    --muted: #707070;
+    --color: #242424;
     --background-color: #fefefe;
 }
 
@@ -29,6 +29,7 @@ body {
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
+    font-size: 14px;
 }
 
 a {
