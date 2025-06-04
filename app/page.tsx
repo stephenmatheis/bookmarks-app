@@ -41,13 +41,15 @@ export default async function Home() {
                                 <div className={styles.date}>{new Date(bookmark.created_at).toLocaleString()}</div>
                             </div>
                             {bookmark.image_url ? (
-                                <Image
-                                    src={bookmark.image_url}
-                                    alt={bookmark.title}
-                                    width={1920}
-                                    height={1080}
-                                    priority
-                                />
+                                <Link href={bookmark.url} target="_blank" rel="noopener noreferrer">
+                                    <Image
+                                        src={bookmark.image_url}
+                                        alt={bookmark.title}
+                                        width={1920}
+                                        height={1080}
+                                        priority
+                                    />
+                                </Link>
                             ) : (
                                 <div className={styles.placeholder}>Image missing</div>
                             )}
