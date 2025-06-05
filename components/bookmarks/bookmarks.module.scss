@@ -1,0 +1,78 @@
+.bookmarks {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem;
+
+    .info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        .avatar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 34px;
+            height: 34px;
+            background-color: crimson;
+            margin-right: 1rem;
+
+            svg {
+                fill: #f1f1f3;
+                width: 17px;
+                height: 17px;
+            }
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--muted);
+        }
+
+        .date {
+            color: var(--muted);
+        }
+    }
+
+    .bookmark {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 960px;
+
+        .text {
+            padding: 2rem 0rem;
+            border-bottom: solid 1px rgba(0, 0, 0, 0.15);
+
+            .title {
+                font-size: 1rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+            }
+
+            a {
+                display: inline-block;
+                width: 100%;
+            }
+        }
+
+        img {
+            object-fit: contain;
+            border-radius: 6px;
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.125);
+            width: 100%;
+            height: auto;
+        }
+
+        .placeholder {
+            flex: 1;
+            background-color: var(--background-color);
+        }
+    }
+}
